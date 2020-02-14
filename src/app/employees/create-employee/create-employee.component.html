@@ -1,0 +1,28 @@
+<form #empform="ngForm" (ngSubmit)="saveEmployee(empform)">
+<div class="panel panel-primary" >
+	<div class="panel-heading">
+		<h3 class="panel-title">Create</h3>
+	</div>
+	<div class="panel-body">
+		<div class="form-group">
+			<label for="fullname">Full Name</label>
+			<input type="text" name="fullname" id="fullname" [(ngModel)]="fullname" class="form-control"/>
+			<label for="email">Email</label>
+			<input type="text" name="email" id="email" [(ngModel)]= "email" class="form-control"/>
+			<label for="phone">Phone Number</label>
+			<input type="text" id="phone" name="phone" [(ngModel)]="phone"  class="form-control"/>
+			<label for="date">Date Of Birth</label>
+			<input type="date" id="date" name="date" [(ngModel)]="date" class="form-control"/>
+			<label for="contactpreference">Contact Preference</label>
+			<input type="text" id="contactpreference" name="contactpreference" [(ngModel)]="contactpreference" class="form-control"/>
+      <label for="gender">Gender</label>
+      <div id="gender" class="form-control">
+        <label class="radio-inline"><input type="radio" value="male" name="gender" [(ngModel)]="gender"/> Male <input type="radio" value="female" name="gender" [(ngModel)]="gender"/> Female </label>
+        </div>
+      </div>
+		</div>
+		<div class="panel-footer">
+			<button type="submit" class="btn btn-primary"> Save</button>
+		</div>
+	</div>
+</form>

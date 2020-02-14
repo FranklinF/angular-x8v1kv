@@ -1,0 +1,11 @@
+.imageClass{
+  height: 200px;
+  width: 200px;
+}
+.vertical-align{
+  display: flex;
+  align-items: center;
+}
+.space{
+  margin:5px;
+}
